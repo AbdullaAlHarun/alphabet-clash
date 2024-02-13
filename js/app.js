@@ -11,9 +11,22 @@
 // }
 
 // between moving secreen option 2 
+function continueGame(){
+    //step-1: generate a random alphabate 
+    const alphabate = getRandomAlphabet();
+
+    //step-2 set genarated alphabate to the screen  
+
+    const currentAlphabetElement = document.getElementById('current-alphabate');
+    currentAlphabetElement.innerText = alphabate;
+
+    //set background color 
+    setBackgroundColorById(alphabate);
+}
+
 
 function play(){
     hideElementById('home-screen');
     showElementById('play-ground');
-    
+    continueGame()
 }
