@@ -73,3 +73,7 @@ function handleKeyboardKeyUpEvent(event){
     }
 
 }
+
+
+// captured keyboard key press
+document.addEventListener('keyup', handleKeyboardKeyUpEvent )
