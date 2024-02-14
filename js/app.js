@@ -103,3 +103,17 @@ function play(){
     setTextElementValueById('current-life', 5);
     setTextElementValueById('current-score', 0);
 }
+
+function gameOver(){
+    hideElementById('play-ground');
+    showElementById('final-score');
+
+    //update final score
+    //get the final score 
+    const lastScore =getTextElementValueById('current-score');
+    setTextElementValueById('last-score', lastScore);
+
+    //clear the last selected key 
+    const currentAlphabet = getElementTextById('current-alphabet');
+    removeBackgroundColorById(currentAlphabet);
+}
