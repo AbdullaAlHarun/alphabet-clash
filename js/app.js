@@ -1,14 +1,6 @@
 
-// between moving secreen option 1 
-// function play(){
-//    //hide the home screen 
-//    const homeSection = document.getElementById('home-screen');
-//    homeSection.classList.add('hidden');
+const audio = Audio();
 
-//    //show the home screen 
-//    const playGroundSection = document.getElementById('play-ground');
-//    playGroundSection.classList.remove('hidden')
-// }
 function handleKeyboardKeyUpEvent(event){
     const playerPressed = event.key;
 
@@ -28,17 +20,8 @@ function handleKeyboardKeyUpEvent(event){
 
     if(playerPressed === expectedAlphabet){
 
-        //get the current score option : 1 
-        //  const currentScoreElement = document.getElementById('current-score');
-        //  const currentScoreText = currentScoreElement.innerText;
-        //  const currrentScore =  parseInt(currentScoreText);
-        //  console.log(currrentScore);
-        
-        //  // increase the score by 1 
-        // const newScore = currrentScore + 1;
+        audio.src = "../audio/right.mp3"
 
-        // // show the update score  
-        // currentScoreElement.innerText = newScore;
         const currrentScore =getTextElementValueById('current-score');
         const updatedScore = currrentScore + 1;
         setTextElementValueById('current-score', updatedScore);
