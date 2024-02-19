@@ -1,5 +1,5 @@
 
-const audio = Audio();
+const audio = new Audio();
 
 function handleKeyboardKeyUpEvent(event){
     const playerPressed = event.key;
@@ -20,7 +20,8 @@ function handleKeyboardKeyUpEvent(event){
 
     if(playerPressed === expectedAlphabet){
 
-        audio.src = "../audio/right.mp3"
+        audio.src = "../audio/right.mp3";
+        audio.play();
 
         const currrentScore =getTextElementValueById('current-score');
         const updatedScore = currrentScore + 1;
@@ -32,20 +33,9 @@ function handleKeyboardKeyUpEvent(event){
         continueGame();
     } else {
 
-        // option 1 : 
-        //  //step -1 :  get the current life number 
-        // const currentLifeElement = document.getElementById('current-life');
-        // const currentLifeText = currentLifeElement.innerText;
-        // const currentLife = parseInt(currentLifeText);
+        audio.src = "../audio/wrong.mp3";
+        audio.play();
 
-        // //step-2: reduce the life count 
-        // const newLife = currentLife - 1;
-
-        // //step 3: display the update life count 
-        // currentLifeElement.innerText = newLife;
-
-
-        //option: 2 
         const currentLife = getTextElementValueById('current-life');
         const updatedLife = currentLife -1; 
         setTextElementValueById('current-life', updatedLife);
