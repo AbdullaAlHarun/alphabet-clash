@@ -1,7 +1,11 @@
 
 const audio = new Audio();
+let isGamePlayOn = false;
 
 function handleKeyboardKeyUpEvent(event){
+   if (isGamePlayOn == false) return;
+   
+   
     const playerPressed = event.key;
 
     //stop the game if player press ESc button
@@ -75,6 +79,8 @@ function play(){
     //reset score and life 
     setTextElementValueById('current-life', 5);
     setTextElementValueById('current-score', 0);
+
+    isGamePlayOn = true;
 }
 
 function gameOver(){
