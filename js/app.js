@@ -27,6 +27,8 @@ function handleKeyboardKeyUpEvent(event){
         audio.src = "../audio/right.mp3";
         audio.play();
 
+        // new Audio ("../audio/right.mp3").play()
+
         const currrentScore =getTextElementValueById('current-score');
         const updatedScore = currrentScore + 1;
         setTextElementValueById('current-score', updatedScore);
