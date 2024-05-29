@@ -1,4 +1,4 @@
-# alphabet-clash
+# alphabet-clash/ AFRA's ABC
 
 Live Link: [Click Here](https://afras-abc.netlify.app/)
 
@@ -7,7 +7,7 @@ Live Link: [Click Here](https://afras-abc.netlify.app/)
 
 
 ## Project Overview:
-"Alphabet Adventure" is an educational game designed for young children aged 3 and up to learn the alphabet in a fun and interactive way. This project was created as part of my Frontend Development studies at Noroff, with the aim of combining play and learning for toddlers.
+"Alphabet clash / Afra's ABC" is an educational game designed for young children aged 3 and up to learn the alphabet in a fun and interactive way. This project was created as part of my Frontend Development studies at Noroff, with the aim of combining play and learning for toddlers.
 
 ## Technologies Used:
 * HTML: For structuring the game content.
